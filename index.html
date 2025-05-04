@@ -1,0 +1,577 @@
+<!-- TV Desktop Home   -->
+<html>
+    <head>
+        <TITLE>GCS Home</TITLE>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta createdby="LGM">
+        <link rel="stylesheet" href="desktop.css" type="text/css" media="all">
+        <link rel="stylesheet" href="tabs.css" type="text/css" media="all">
+        <link rel="stylesheet" href="tables.css" type="text/css" media="all">
+        <link rel="icon" href="favicon.ico">        
+    </head>
+	
+    <body onload="bodyOnLoadFunction()">
+        <div id="surround">
+            <!-- ===========Side Menu========= -->
+            <div class="sidebar">
+                <div class="sidetitle">Tesseract</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://calendar.google.com/calendar/">Calendar</a></li>
+                    <li><a target="_blank" href="https://mail.google.com/mail/u/0/?hl=en&shva=1#inbox">GMail</a></li>
+                    <li><a target="_blank" href="https://drive.google.com/drive/my-drive">Google Drive</a></li>
+                    <li><a target="_blank" href="https://meet.google.com/?hs=197&authuser=0">Google Meet</a></li>
+                    <li><a target="_blank" href="https://github.com/TesseractVentures">GitHub</a></li>
+                    <li><a target="_blank" href="https://tesseractventures.testmo.net/">TestMo</a></li>
+                    <li><a target="_blank" href="https://balsamiq.cloud/sg3mqpv/pj99flm/r93B7">Balsamic</a></li>
+                    <li><a target="_blank" href="https://www.icloud.com/">iCloud</a></li>
+                    <li><a target="_blank" href="https://tesseractventures.harvestapp.com/time/week">Harvest Time Tracking</a></li>
+                    <li><a target="_blank" href="https://tesseractventures.atlassian.net/">Confluence</a></li>
+                </ul>
+
+                <div class="sidetitle">Environments</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://dev.synthesis.mosaicapp.us/dashboard">Synthesis Dev</a></li>
+                    <li><a target="_blank" href="https://wa-synthesis-ui-qa-cenus.azurewebsites.net/login?callbackUrl=%2Fdashboard">Synthesis QA</a></li>
+                    <li><a target="_blank" href="https://wa-synthesis-ui-stage-cenus.azurewebsites.net/login?callbackUrl=%2Fdashboard">Synthesis Stage</a></li>
+                    <li><a target="_blank" href="https://rt-demo-hq.mosaicapp.io:3001/map">RT KC HQ</a></li>
+                    <li><a target="_blank" href="https://jedunn.mosaicapp.io/login?callbackUrl=%2Fdashboard">JE Dunn Dashboard</a></li>
+                    <li><a target="_blank" href="https://192.168.2.101/sensmap">Sewio KC</a></li>
+                    <li><a target="_blank" href="https://dev.auth.mosaicapp.us/application-management">User Managment Dev</a></li>
+                    <li><a target="_blank" href="https://qa.auth.mosaicapp.us/application-management">User Managment QA</a></li>
+                    <li><a target="_blank" href="https://dev.auth.mosaicapp.us/login">Firebase Auth Dev</a></li>
+                    <li><a target="_blank" href="https://qa.auth.mosaicapp.us/login">Firebase Auth QA</a></li>
+                </ul>
+
+                <div class="sidetitle">Demos</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://qa.synthesis.mosaicapp.us/dashboard">Synthesis QA</a></li>
+                    <li><a target="_blank" href="https://rt-demo-hq.mosaicapp.io:3001/map">RT KC HQ</a></li>
+                    <li><a target="_blank" href="https://jedunn.mosaicapp.io/login?callbackUrl=%2Fdashboard">JE Dunn Dashboard</a></li>
+                    <li><a target="_blank" href="https://192.168.2.101/sensmap">Sewio KC</a></li>
+                    <li><a target="_blank" href="https://svc-machine-api-dev-cenus.azurewebsites.net/swagger/index.html">Machine Dev</a></li>
+                    <li><a target="_blank" href="https://svc-leaf-api-dev-cenus.azurewebsites.net/swagger/index.html">Leaf Dev</a></li>
+                    <li><a target="_blank" href="https://landus-demo.niceocean-12323632.centralus.azurecontainerapps.io/">NiceOcean Demo (March)</a></li>
+                </ul>
+
+                <div class="sidetitle">Cloud - Azure/GCP</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis/scope/%2Fsubscriptions%2F88fc2da4-ca41-48fa-b9d8-6efd4a7c9931/open/CostAnalysis/openedBy/CostAnalysisTile/view~/%7B%22currency%22%3A%22USD%22%2C%22dateRange%22%3A%22Custom%22%2C%22query%22%3A%7B%22type%22%3A%22ActualCost%22%2C%22dataSet%22%3A%7B%22granularity%22%3A%22Daily%22%2C%22aggregation%22%3A%7B%22totalCost%22%3A%7B%22name%22%3A%22Cost%22%2C%22function%22%3A%22Sum%22%7D%2C%22totalCostUSD%22%3A%7B%22name%22%3A%22CostUSD%22%2C%22function%22%3A%22Sum%22%7D%7D%2C%22sorting%22%3A%5B%7B%22direction%22%3A%22ascending%22%2C%22name%22%3A%22UsageDate%22%7D%5D%2C%22grouping%22%3A%5B%7B%22type%22%3A%22Dimension%22%2C%22name%22%3A%22CostAllocationRuleName%22%7D%5D%7D%2C%22timeframe%22%3A%22Custom%22%2C%22timePeriod%22%3A%7B%22from%22%3A%222024-03-01%22%2C%22to%22%3A%222024-03-31%22%7D%7D%2C%22chart%22%3A%22StackedColumn%22%2C%22accumulated%22%3A%22false%22%2C%22pivots%22%3A%5B%7B%22type%22%3A%22Dimension%22%2C%22name%22%3A%22ServiceName%22%7D%2C%7B%22type%22%3A%22Dimension%22%2C%22name%22%3A%22ResourceLocation%22%7D%2C%7B%22type%22%3A%22Dimension%22%2C%22name%22%3A%22ResourceGroupName%22%7D%5D%2C%22scope%22%3A%22subscriptions%2F88fc2da4-ca41-48fa-b9d8-6efd4a7c9931%22%2C%22kpis%22%3A%5B%7B%22type%22%3A%22Budget%22%2C%22id%22%3A%22COST_NAVIGATOR.BUDGET_OPTIONS.NONE%22%2C%22enabled%22%3Atrue%2C%22extendedProperties%22%3A%7B%22name%22%3A%22COST_NAVIGATOR.BUDGET_OPTIONS.NONE%22%7D%7D%2C%7B%22type%22%3A%22Forecast%22%2C%22enabled%22%3Atrue%7D%5D%2C%22displayName%22%3A%22Mosaic%20Monthly%20Costs%22%7D">Azure Costs</a></li>
+                    <li><a target="_blank" href="https://portal.azure.com/#view/HubsExtension/BrowseAll/resourceType/microsoft.resources%2Fresources">Azure Portal</a></li>
+                    <li><a target="_blank" href="https://dev.azure.com/TesseractVenturesLLC/Synthesis">Azure DevOps</a></li>
+                    <li><a target="_blank" href="https://console.cloud.google.com/home/dashboard?project=test-client-flounder">GCP Dashboard</a></li>
+                    <li><a target="_blank" href="https://console.cloud.google.com/billing/0103F1-1EECE7-C26F43/reports;grouping=GROUP_BY_SKU;projects=test-client-flounder?project=test-client-flounder">GCP Costs</a></li>
+                    <li><a target="_blank" href="https://admin.google.com/ac/home?hl=en&rapt=AEjHL4PO-xmvpJq2pRLVQEFkVtFdDfyDSKX98JvChYUca2NsGq8-GBiAnFlBBHEnz1c5WRyuWZH9dUEJ0Gi78RMmgzdXI0vQmlilXXYMLpSx4sLyctwDw7E">GSuite</a></li>
+				</ul>
+
+                <div class="sidetitle">RT</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://rt-demo-hq.mosaicapp.io:3001/">RT HQ</a></li>
+                    <li><a target="_blank" href="https://rt-demo-hq.mosaicapp.io:8091/docs/">RT HQ Swagger</a></li>
+                    <li><a target="_blank" href="https://rt-demo.mosaicapp.io:8091/docs/">KC RT Swagger</a></li>
+                </ul>
+
+                <div class="sidetitle">Ubiquity / Tailscale</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://login.tailscale.com/admin/machines">Tailscale</a></li>
+                    <li><a target="_blank" href="https://mobility.ui.com/">Ubiquity Admin</a></li>
+                    <li><a target="_blank" href="https://unifi.ui.com/">Unifi Admin</a></li>
+                    <li><a target="_blank" href="https://mobility.ui.com/workspace">Ubiquity UMR</a></li>
+                </ul>
+
+                <div class="sidetitle">PAC</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://jedunn.mosaicapp.io/dashboard">Dashboard JED</a></li>
+                    <li><a target="_blank" href="https://prism-dashboard-demo-5getr6hosa-uc.a.run.app/login?callbackUrl=%2Fdashboard">Dashboard Demo</a></li>
+                </ul>
+
+                <div class="sidetitle">Swaggers</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://svc-machine-api-dev-cenus.azurewebsites.net/swagger/index.html">Machine Dev</a></li>
+                    <li><a target="_blank" href="https://svc-leaf-api-dev-cenus.azurewebsites.net/swagger/index.html">Leaf Dev</a></li>
+                    <li><a target="_blank" href="https://svc-notif-api-dev-cenus.azurewebsites.net/swagger/index.html">Notifications Dev</a></li>
+                    <li><a target="_blank" href="https://svc-party-api-dev-cenus.azurewebsites.net/swagger/index.html">Party Dev</a></li>
+				</ul>
+
+                <div class="sidetitle">AI</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://chat.openai.com/">ChatGPT</a></li>
+                    <li><a target="_blank" href="https://gemini.google.com/app">Gemini</a></li>
+                    <li><a target="_blank" href="https://claude.ai/login?returnTo=%2F%3F">Claude Anthropic</a></li>
+                    <li><a target="_blank" href="https://chat.openai.com/chat">OpenAPI</a></li>
+                    <li><a target="_blank" href="https://grok.com/?ref=aiartweekly">Grok</a></li>
+                    <li><a target="_blank" href="https://www.perplexity.ai">Perplexity</a></li>
+                    <li><a target="_blank" href="https://llama.meta.com/">Metta Llama</a></li>
+                    <li><a target="_blank" href="https://cohere.com/">Cohere</a></li>
+                    <li><a target="_blank" href="https://www.ai21.com/">A121 Labs Jurassic</a></li>
+                    <li><a target="_blank" href="https://mistral.ai/">Mistral AI</a></li>
+                    <li><a target="_blank" href="hugginggface.io">Hugging Face</a></li>
+                    <li><a target="_blank" href="https://maestra.ai/">maestra</a></li>
+                </ul>
+
+                <div class="sidetitle">Image AI</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://openai.com/dall-e">DALL-E</a></li>
+                    <li><a target="_blank" href="https://www.midjourney.com">Midjourney</a></li>
+                    <li><a target="_blank" href="https://stability.ai/">Stable Diffusion</a></li>
+                    <li><a target="_blank" href=" https://firefly.adobe.com">Adobe Firefly</a></li>
+                    <li><a target="_blank" href="https://runwayml.com/">Runway</a></li>
+                    <li><a target="_blank" href="https://leonardo.ai/">Leanardo</a></li>
+                    <li><a target="_blank" href="https://www.bing.com/create">Bing</a></li>
+                    <li><a target="_blank" href="https://imagen.ai/">Google Image</a></li>
+                    <li><a target="_blank" href="">Gemini</a></li>
+                    <li><a target="_blank" href="">Gemini</a></li>
+                </ul>
+
+                <div class="sidetitle">Code AI</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://github.com/features/copilot">Copilot</a></li>
+                    <li><a target="_blank" href="https://aws.amazon.com/codewhisperer">Amazon Coder Whisperer</a></li>
+                    <li><a target="_blank" href="Replit">Replit</a></li>
+                    <li><a target="_blank" href="https://www.tabnine.com/">Tabnine</a></li>
+                    <li><a target="_blank" href="https://codeium.com/">Codeium</a></li>
+                    <li><a target="_blank" href="https://cursor.sh/">Cursor</a></li>
+                    <li><a target="_blank" href="https://deepseekcoder.github.io/">DeepSeel Code</a></li>
+                    <li><a target="_blank" href="https://sourcegraph.com/cody">SourceGraph Cody</a></li>
+                </ul>
+
+                <div class="sidetitle">Web AI</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://www.canva.com/magic-design/">Canva</a></li>
+                    <li><a target="_blank" href="https://www.usegalileo.ai">Galileo</a></li>
+                    <li><a target="_blank" href="https://www.framer.com/ai">WebBuilder</a></li>
+                    <li><a target="_blank" href="https://www.framer.com/ai">Framer AI</a></li>
+                    <li><a target="_blank" href="https://webflow.com/ai">WebFlow</a></li>
+                    <li><a target="_blank" href="https://www.wix.com/adi">Wix</a></li>
+                    <li><a target="_blank" href="https://10web.io/ai-website-builder/">10Web</a></li>
+                    <li><a target="_blank" href="https://www.duda.co/ai-website-builder">Duda</a></li>
+                </ul>
+
+                <div class="sidetitle">WebDev AI</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="https://v0.dev/">Vo</a></li>
+                    <li><a target="_blank" href="https://www.builder.io/">Builder io</a></li>
+                    <li><a target="_blank" href="https://www.plasmic.app/">Plasmic</a></li>
+                    <li><a target="_blank" href="https://replit.com/ghostwriter">Replit GhostWriter</a></li>
+                    <li><a target="_blank" href="https://reactant.dev/">Rectant</a></li>
+                    <li><a target="_blank" href="https://www.locofy.ai/">Locofy</a></li>
+                    <li><a target="_blank" href="https://codedesign.ai/">Code Design</a></li>
+                    <li><a target="_blank" href="https://www.animaapp.com/">Anima</a></li>
+                    <li><a target="_blank" href="https://runwayml.com/">runwayml</a></li>
+                    <li><a target="_blank" href="https://diagram.com/">Diagram</a></li>
+                    <li><a target="_blank" href="https://uizard.io/">Uizard</a></li>
+                    <li><a target="_blank" href="https://relume.io/">Relume</a></li>
+                </ul>
+
+
+
+                <div class="sidetitle">Keep</div>
+                <ul class="menulines">
+                    <li><a target="_blank" href="http://100.79.172.40:3000">NWA RT</a></li>
+                    <li><a target="_blank" href="http://100.79.172.40:8091/docs/">NWA RT Swagger</a></li>
+                    <li><a target="_blank" href="https://192.168.2.101">KC Sewio Server</a></li>
+                    <li><a target="_blank" href="https://www.figma.com/design/fZ41KBG1Q2C1Gl46oOGeSc/Synthesis-UI%2FUX?node-id=0-1&p=f&t=EJlFOJOjMGDC3orC-0">Dawn Figma</a></li>
+                    <li><a target="_blank" href="https://whiteman-rtls-dev-5getr6hosa-uc.a.run.app/">Asset Tracking Web</a></li>
+                    <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/PAC/pages/50298884/Common+PRISM+Access+Control+Problems">Common Problems</a></li>
+                    <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/PAC/overview?homepageId=29065432">Home</a></li>
+                    <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/PAC/pages/28835850/PRISM+Access+Control+Stack+Overview">Documetnation</a></li>
+                    <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/PAC/pages/88047617/Construction+Sites+Deployment+Diagram">Diagram</a></li>
+                    <li><a target="_blank" href="https://docs.google.com/forms/d/1SMcTXXGavJAtXQTaaS8OMb0LGQ4iQ9XnEeaaF4CkrTY/edit?ts=6644ebbb">IT Request Form</a></li>
+                    <li><a target="_blank" href="https://prism-dashboard-demo-5getr6hosa-uc.a.run.app/dashboard">Construction Demo Marshall</a></li>
+                    <li><a target="_blank" href="https://www.figma.com/design/fZ41KBG1Q2C1Gl46oOGeSc/Synthesis-UI%2FUX?node-id=0-1&p=f&t=EJlFOJOjMGDC3orC-0">Dawn Figma</a></li>
+                    <li><a target="_blank" href="https://www.figma.com/design/2PRnHcXRqUsNcKTvv1OCOO/Phase2_UI-Architectures?node-id=0-1&t=qRadKIpVLxjVrJqM-0">Phase 2 Figma</a></li>
+                    <li><a target="_blank" href="https://docs.google.com/presentation/d/1dp6MVWUOc9Wf9AiOyol49QbEz5p9-K0ImYsR65ntUv4/edit#slide=id.g2706e3ee251_0_0">Phase 2 PPT</a></li>
+                    <li><a target="_blank" href="https://portal.azure.com/#@developmenttesseractventure.onmicrosoft.com/resource/subscriptions/88fc2da4-ca41-48fa-b9d8-6efd4a7c9931/resourceGroups/rg-mosaic-machine-devqa-cenus/providers/Microsoft.Web/sites/svc-mosaic-machine-api-devqa-cenus/appServices">Machine Data Azure App</a></li>
+                </ul>
+
+
+
+            </div>
+            <!-- ===========End Side Menu ========= -->
+
+            <!-- ===========  Tabs   ========= -->
+            <div id="contentArea">
+                <div class="tabColumn">
+                    <div id="tabContainer">
+                      <div class="tabs">
+                        <ul>
+                          <li id="tabHeader_Home">Home</li>
+                          <li id="tabHeader_Synthesis">Synthesis</li>
+                          <li id="tabHeader_Dev">Dev</li>
+                          <li id="tabHeader_AI onClick="loadPage('aiPage.html', 'tabPageAIcontainer')">AI</li>
+                          <li id="tabHeader_PAC">PAC</li>
+                          <li id="tabHeader_Docs">Docs</li>
+                          <li id="tabHeader_Weather">Weather</li>
+                        </ul>
+                      </div>
+
+                    <!-- =========== Tab Content  ========= -->
+                    <div class="tabscontent">
+
+
+                        <div class="tabpage" id="tabpage_Home">
+ 
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Atlassian</h3>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/">Jira</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/home">Confluence</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/jira/software/projects/SYN/boards/16/">Jira Synthesis</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/">Confluence Synthesis</a><br/>
+                                            <br/>
+                                        </td>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Git Links</h3>
+
+                                            <a target="_blank" href="https://github.com/">GitHub</a><br/>
+                                            <a target="_blank" href="http://help.github.com/win-set-up-git/">GitHub Setup</a><br/>
+                                            <a target="_blank" href="http://book.git-scm.com/">Git Community Book</a><br/>
+                                            <a target="_blank" href="https://book.git-scm.com/book/en/v2">Pro Git Book</a><br/>
+                                            <br/>
+                                        </td>
+
+                                        <td style="padding-right: 30px;">
+                                            <h3>Synthesis Environments</h3>
+
+                                            <a target="_blank" href="https://dev.synthesis.mosaicapp.us/dashboard">Synthesis Dev</a><br/>
+                                            <a target="_blank" href="https://wa-synthesis-ui-qa-cenus.azurewebsites.net/login?callbackUrl=%2Fdashboard">Synthesis QA</a><br/>
+                                            <a target="_blank" href="https://wa-synthesis-ui-stage-cenus.azurewebsites.net/login?callbackUrl=%2Fdashboard">Synthesis Stage</a><br/>
+                                                                    <br/>
+                                            <br/>
+                                        </td>
+                                    </tr>                                    
+                                </tbody>
+                            </table>
+
+                            <hr>
+                            <div style="float:left">
+                                <div>
+                                    <h3>Quick Git Workflow</h3>
+                                    <ol style="list-style-type: none;">
+                                        <li>git checkout -b feature/{name}</li>
+                                        <li>git add -A</li>
+                                        <li>git commit -m &quot;Comment&quot;</li>
+                                        <li>git checkout main</li>
+                                        <li>git merge feature/{name}</li>
+                                        <li>git branch -d feature/{name}</li>
+                                        <li>git push -v origin main</li>
+                                    </ol>
+                                </div><br/>
+   
+                                <h3>More Git commands</h3>
+                                <table>
+                                    <tr><td style="color:blue;width:400px;"><br/>Start workflow</td></tr>
+                                    <tr><td>git branch -d feature/oldname</td><td style="color:blue">(cleanup: remove last local feature branch [feature/oldFeature]) </td><tr>
+                                    <tr><td>git push origin -delete feature/oldname </td><td style="color:blue">(cleanup: remove last remote feature branch [origin feature/oldFeature])</td></tr>
+                                </table>
+                                <table>
+                                    <tr><td style="color:blue;width:400px;"><br/>Refresh Branches</td></tr>
+                                    <tr><td>git checkout main</td><td style="color:blue">(goto local main branch root folder)</td></tr>
+                                    <tr><td>git pull origin main </td><td style="color:blue">(refresh local current main) </td></tr>
+                                    <tr><td>git checkout develop </td><td style="color:blue">(goto develop branch) </td></tr>
+                                    <tr><td>git pull origin develop</td><td style="color:blue">(refresh local develop branch)</td></tr>
+                                </table>
+                                <table>
+                                    <tr><td style="color:blue;width:400px;"><br/>Begin Coding</td></tr>
+                                    <tr><td>git checkout -b feature/name  </td><td style="color:blue">(create local feature branch from develop)</td></tr>
+                                </table>
+                                <table>
+                                    <tr><td style="color:blue;width:400px;"><br/>Coding done, PR Checklist done</td></tr>
+                                    <tr><td>git add -A </td><td style="color:blue">(stage changed files) </td></tr>
+                                    <tr><td>git commit -m &quot;Feature comment&quot; </td><td style="color:blue">(commit staged changes to feature branch)</td></tr>
+                                </table>
+                                <table>
+                                    <tr><td style="color:blue;width:400px;"><br/>Ready for PR</td></tr>
+                                    <tr><td>git checkout develop </td><td style="color:blue">(goto local main branch root folder) </td></tr>
+                                    <tr><td>git merge feature/name </td><td style="color:blue">(pull feature changes into local develop branch)</td></tr>
+                                    <tr><td>git push origin feature/name </td><td style="color:blue">(push local feature branch to remote server for Pull Request)</td></tr>
+                                </table>
+                                <table>
+                                    <tr><td style="color:blue;width:400px;"><br/>Address PR comments</td></tr>
+                                    <tr><td>git checkout develop </td><td style="color:blue">(Reviewers could have changed remote feature branch during review)</td></tr>
+                                    <tr><td>git pull origin/feature/name </td><td style="color:blue">check for changes, pull as needed; verify this syntax</td></tr>
+                                    <tr><td>git checkout feature/name </td><td style="color:blue">goto local feature branch</td></tr>
+                                </table>
+                                <table>
+                                    <tr><td>style="color:blue;width:400px;"><br/>Address Comments, Code Again</td></tr>
+                                    <tr><td>git add -A </td><td style="color:blue">(stage all changes to current branch) </td></tr>
+                                    <tr><td>git commit -m &quot;PR comments&quot;</td><td style="color:blue">(commit staged changes to local feature branch)</td></tr>
+                                    <tr><td>git checkout develop</td><td style="color:blue">(goto local root develop branch) </td></tr>
+                                    <tr><td>git merge feature/name </td><td style="color:blue">(pull feature changes into local develop branch)</td></tr>
+                                    <tr><td>git push origin feature/name</td><td style="color:blue">(push local feature branch to remote)</td></tr>
+                               </table>
+                            </div>
+                        </div> <!-- end tabpage_Home   -->
+
+                        <div class="tabpage" id="tabpage_Synthesis">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Landus</h3>
+                                            <a target="_blank" href="https://landus-demo.niceocean-12323632.centralus.azurecontainerapps.io/">Landus Demo</a><br/>
+                                            <a target="_blank" href="https://www.figma.com/design/2PRnHcXRqUsNcKTvv1OCOO/Phase2_UI-Architectures?node-id=0-1&t=qRadKIpVLxjVrJqM-0">Phase 2 Figma</a><br/>
+                                            <a target="_blank" href="https://docs.google.com/presentation/d/1dp6MVWUOc9Wf9AiOyol49QbEz5p9-K0ImYsR65ntUv4/edit#slide=id.g2706e3ee251_0_0">Phase 2 PPT</a><br/>
+                                            <br/>
+                                        </td>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Environments</h3>
+                                            <a target="_blank" href="https://svc-mosaic-party-api-devqa-cenus.azurewebsites.net/swagger/index.html">PartyAPI Endpoint</a><br/>
+                                            <a target="_blank" href="https://svc-mosaic-machine-api-devqa-cenus.azurewebsites.net/swagger/index.html/">Machine Data Endpoint</a><br/>
+                                            <a target="_blank" href="https://portal.azure.com/#@developmenttesseractventure.onmicrosoft.com/resource/subscriptions/88fc2da4-ca41-48fa-b9d8-6efd4a7c9931/resourceGroups/rg-mosaic-machine-devqa-cenus/providers/Microsoft.Web/sites/svc-mosaic-machine-api-devqa-cenus/appServices">Machine Data Azure App</a><br/>
+                                            <a target="_blank" href="https://landus-demo.niceocean-12323632.centralus.azurecontainerapps.io/">Party API Endpoint</a><br/>
+                                        </td>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Confluence</h3>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/overview">Synthesis</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/pages/128778244/Architecture+Models">Synthesis Models</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/pages/129335298/Data+Models">Synthesis Data</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/pages/162660353/Project+Lifecycle+and+Planning">Synthesis Plan</a><br/>
+                                        </td>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Landus</h3>
+                                            <a target="_blank" href="https://landus-demo.niceocean-12323632.centralus.azurecontainerapps.io/">Landus Demo</a><br/>
+                                            <a target="_blank" href="https://www.figma.com/design/2PRnHcXRqUsNcKTvv1OCOO/Phase2_UI-Architectures?node-id=0-1&t=qRadKIpVLxjVrJqM-0">Phase 2 Figma</a><br/>
+                                            <a target="_blank" href="https://docs.google.com/presentation/d/1dp6MVWUOc9Wf9AiOyol49QbEz5p9-K0ImYsR65ntUv4/edit#slide=id.g2706e3ee251_0_0">Phase 2 PPT</a><br/>
+                                            <a target="_blank" href="https://withleaf.io/">Leaf Website</a><br/>
+                                        </td>
+                                    </tr>                                    
+                                </tbody>
+                            </table>
+
+
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Misc</h3>
+                                            <a target="_blank" href="https://dronedeploy.com/">Drone Deploy</a><br/>
+                                            <a target="_blank" href="https://withleaf.io/en/tutorials/john-deere-authentication-with-leaf/">JD to Leaf</a><br/>
+                                            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1kKD9hLUfAdfeOFoFl7qMqXBX8pYWsULautDFwjG6bPA/edit?gid=1422937335#gid=1422937335">John-Synthesis</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/pages/302317616/Features+-+6+Months">Feature Status</a><br/>
+                                            <a target="_blank" href="https://docs.google.com/document/d/1_e1-62Vsjp5Y9HE82eT3J6VE2RF4EoKkkUJj8jnLgnA/edit?tab=t.0">Synthesis Environments</a><br/>
+                                            <a target="_blank" href="https://tesseractventures.1password.com/app#/everything/AllItems">1PW</a>
+                                            <br/>
+                                        </td>
+                                        <td style="padding-right: 30px;">
+                                            <h3>Devices</h3>
+                                            <a target="_blank" href="https://teralytic.com/soil-probe/">Soil Probes</a><br/>
+                                            <a target="_blank" href="https://shop.thissl.com/home/#compare">THissl</a><br/>
+                                            <a target="_blank" href="https://docs.google.com/spreadsheets/d/1kKD9hLUfAdfeOFoFl7qMqXBX8pYWsULautDFwjG6bPA/edit?gid=1422937335#gid=1422937335">John-Synthesis</a><br/>
+                                            <br/>
+                                        </td>
+
+                                    </tr>                                    
+                                </tbody>
+                            </table>                             
+                        </div><!-- tabpage_Synthesis -->
+
+                        <div class="tabpage" id="tabpage_Git">
+                            <div style="float:left">
+                                <ul>
+                                    <li><a target="_blank" href="https://github.com/">GitHub</a></li>
+                                    <li><a target="_blank" href="http://help.github.com/win-set-up-git/">GitHub Setup</a></li>
+                                    <li><a target="_blank" href="http://book.git-scm.com/">Git Community Book</a></li>
+                                    <li><a target="_blank" href="https://book.git-scm.com/book/en/v2">Pro Git Book</a></li>
+                                </ul>
+                            </div>
+                            <div style="float:left">
+                                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Git Workflow</h3>
+                                <ol style="list-style-type: none;">
+                                    <li>git checkout -b feature/{name}</li>
+                                    <li>git add -A</li>
+                                    <li>git commit -m &quot;Comment&quot;</li>
+                                    <li>git checkout main</li>
+                                    <li>git merge feature/{name}</li>
+                                    <li>git branch -d feature/{name}</li>
+                                    <li>git push -v origin main</li>
+                                </ol>
+                            </div>
+                        </div><!-- tabpage_Git -->
+
+
+
+
+                        <div class="tabpage" id="tabpage_AI">
+
+                            <div id="tabPageAIcontainer"></div>
+                                                        
+                        
+                        </div><!-- tabpage_AI -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="tabpage" id="tabpage_Dev">
+
+                            <br/>
+                            <table>
+                                <td>
+                                    <ul>
+                                        <li><a target="_blank" href="https://learn.microsoft.com/en-us/azure/architecture/">Azure Architecture Center</a></li>
+                                        <li><a target="_blank" href="https://learn.microsoft.com/en-us/azure/architecture/patterns/">Azure Cloud Patterns</a></li>
+                                        <li><a target="_blank" href="https://github.com/mspnp">MS Patterns and Practices</a></li>
+                                        <li><a target="_blank" href="https://github.com/mspnp/azure-databricks-streaming-analytics">Databricks</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><a target="_blank" href="http://www.alistapart.com/articles/strategic-content-management/">AList Apart</a></li>
+                                        <li><a target="_blank" href="http://www.infoq.com/articles/hiranabe-lean-agile-kanban">infoQ</a></li>
+                                        <li><a target="_blank" href="https://www.pcisecuritystandards.org/security_standards/getting_started.php">PCI</a></li>
+                                        <li><a target="_blank" href="https://tesseractventures.1password.com/app#/everything/AllItems">1PW</a></li>
+                                    </ul>
+                                </td>        
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <UL>
+                                            <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+                                            <li><a target="_blank" href="http://docs.jquery.com/Main_Page">jQuery Docs</a></li>
+                                            <li><a target="_blank" href="http://stackoverflow.com//">Stack Overflow</a></li>
+                                            <li><a target="_blank"><a target="_blank" href="https://david-theil.medium.com/how-we-transformed-to-a-product-led-organization-lessons-we-made-and-a-strategy-for-success-97c53a7d2f05">Product Led Org</a><br/>
+                                        <br/>
+                                        <br/>
+                                        <br/>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/overview">Synthesis</a></li>
+                                        <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/SPAC/overview">Space Force</a></li>
+                    
+                                        <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/pages/128778244/Architecture+Models">Synthesis Models</a></li>
+                                        <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/pages/129335298/Data+Models">Synthesis Data</a></li>
+                    
+                                        <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/SD/pages/72712193/Azure+Naming+Conventions">Azure Naming</a></li>
+                                        <li><a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/PAC/pages/98074626/Google+Cloud+Platform">Google Cloud Platform</a></li>
+                                            </td>
+                                    <br/>
+                                </tr>
+                            </table>
+                        </div><!-- tabpage_Dev  -->
+
+
+
+                        <div class="tabpage" id="tabpage_PAC">
+                            <H2>99.9% uptime</H2>
+                            <li><b>Daily:</b> 1 minute and 26 seconds</li>
+                            <li><b>Weekly:</b> 10 minutes and 4.8 seconds</li>
+                            <li><b>Monthly:</b> 43 minutes</li>
+                            <li><b>Quarterly:</b> 2 hours and 10 minutes</li>
+                            <li><b>Yearly:</b> 8 hours and 41 minutes</li>
+
+                            <hr/>
+                            <table>
+                                <tr>
+                                    <td style="padding-right: 30px;">
+                                        <h3>Prism Access Control</h3>
+                                        <li><a target="_blank" href="https://jedunn.mosaicapp.io/dashboard">PAC Dashboard</a><br/></li>
+                                        <li><a target="_blank" href="https://flounder.mosaicapp.io/dashboard">Flounder</a><br/></li>
+                                        <li><a target="_blank" href="https://prism-dashboard-demo-5getr6hosa-uc.a.run.app/login?callbackUrl=%2Fdashboard">PAC Demo</a><br/></li>
+                                        <li><a target="_blank" href="https://docs.credoid.com/en/main/events">Credo Docs</a></li>
+                                        <li><a target="_blank" href="https://cloud.credoid.com/dashboard">Credo Azure Cloud</a></li>
+                                    </td>
+                                    <td style="padding-right: 30px;">
+                                        <h3>Ubiquity</h3>
+                                        <a target="_blank" href="https://unifi.ui.com/">UniFi</a><br/>
+                                        <a target="_blank" href="https://portal.uid.alpha.ui.com/app">UniFi App</a><br/>
+                                        <a target="_blank" href="https://www.cellmapper.net/map?MCC=310&MNC=410&type=LTE&latitude=41.21779581879247&longitude=-95.84169624308953&zoom=12.56634622492122&showTowers=true&showIcons=true&showTowerLabels=true&clusterEnabled=true&tilesEnabled=true&showOrphans=false&showNoFrequencyOnly=false&showFrequencyOnly=false&showBandwidthOnly=false&DateFilterType=None&showHex=false&showVerifiedOnly=false&showUnverifiedOnly=false&showLTECAOnly=false&showENDCOnly=false&showBand=0&showSectorColours=true&mapType=roadmap&darkMode=false&imperialUnits=false">ATT Coverage Map</a><br/>
+                                        <a target="_blank" href="http://mobility.ui.com/">UI Mapping Application</a><br/>
+                                        <br/>
+                                    </td>        
+                                </tr>
+                            </table>
+
+
+                            <hr/>
+                            <img style="padding-left: 15px; padding-top: 10px; width:80%" src="./images/Construction.jpg" alt="Construction Setup."><br/>
+                            <hr/>
+
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <table style="color: black;">
+                               
+
+                                <tr><td>1</td><td>disgust3NICKER_neuroses</td></tr>
+                                <tr></tr><td>synthesistest9@yopmail.com</td><td>tesseract</td></tr>
+                                <tr></tr><td>synthesislandus@gmail.com</td><td>suns-burp-coyotes-aragon</td></tr>
+                                <tr></tr><td>Smart Room Table</td><td>Kirk.must.die!1</td></tr>
+                                <tr></tr><td>TV Ideum Table</td><td>platter.rowers.cared</td></tr>
+                                <tr></tr><td>Mosaic</td><td>platter.rowers.cared</td></tr>
+                                <tr></tr><td>synthesis.demo1@gmail.com</td><td>sGbj7Cda4YMv4J8wcCma</td></tr>
+                                <tr></tr><td>mosaic email</td><td>%qEHXNT3H4mA7np&lt;</td></tr>
+                            </table>
+
+
+                            </div><!-- tabpage_PAC -->
+
+
+                        <div class="tabpage" id="tabpage_Weather">
+                            <img id="radar" style="padding-left: 15px; padding-top: 10px; width:80%" src="https://s.w-x.co/staticmaps/us_radar_plus_usen_1280x720.jpg?crop=16:9&amp;width=800&amp;format=pjpg&amp;auto=webp&amp;quality=60" alt="Current rain and snow in the US.">                            
+                        </div><!-- tabpage_Weather -->
+                        <!-- <video className={styles.video} autoPlay loop muted={!Globals.isTable}> <source src="/images/TESSERACT_SCREENSAVER.mp4.mp4" /></video> -->
+
+                        <div class="tabpage" id="tabpage_Docs">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a target="_blank" href="https://docs.google.com/document/d/1tgDhoN4ybVW60rzJVN9ZtSM7TxYy7b0-wPdhSNeCY0M/edit?pli=1&tab=t.0#heading=h.a1vq2rky1o3a">Flock</a><br/>
+                                        <a target="_blank" href="https://docs.google.com/document/d/1rOkoER97d_tx1SSEbh6kE-UYlJUVBnw9B2VT4DxRNZ8/edit?tab=t.0">Climate Field View</a><br/>
+                                        <a target="_blank" href="https://docs.google.com/document/d/1qBLASlQhx2Qk2nTAlsLzYZj8FcqG9j7jaFHJDXNfJu8/edit?tab=t.0#heading=h.z0rd0j6cjwyx">Earth Daily</a><br/>
+                                        <a target="_blank" href="https://docs.google.com/document/d/1Qy6u-OyUq21cN7cCmTCo8gbTUK4HySvQ3w4UDCo_cms/edit?tab=t.0">AI Whitepaper</a><br/>
+                                        <a target="_blank" href="https://docs.google.com/spreadsheets/d/1qW4vL_f80oC58i4NsncMpZ1UBx4l2r-ln9PckA3AulI/edit?gid=0#gid=0">Farmer List</a><br/>
+                                        <a target="_blank" href="https://docs.google.com/document/d/1uezF_RGoLohv10xzPu1LNH-9zmdtWY6vcl9uSdmqXeA/edit?tab=t.0#heading=h.tomrhy4vs1rr">Flock Hardware Questions</a><br/>
+                                        <a target="_blank" href="https://docs.google.com/document/d/1sa9fIKdlkVW_I_1jxPNcSfV-tXdBU3vcHQfEF7DNOR4/edit?tab=t.0#heading=h.bpj8r1f9y8rd">Climate Field View Notes</a><br/>
+                                    </td>
+                                </tr>
+                            </table>
+            
+                        </div><!-- tabpage_Docs -->
+
+                    </div><!-- TabContent -->
+                </div>
+            </div>
+        </div>
+
+        <script src="tabs.js" />
+
+        <script type="text/javascript">     
+
+            function loadPage(page,elementId) {
+            fetch(page)
+                .then(response => {
+                if (!response.ok) throw new Error('Page not found');
+                return response.text();
+                })
+                .then(html => {
+                document.getElementById('main-content').innerHTML = html;
+                })
+                .catch(error => {
+                document.getElementById('main-content').innerHTML = '<p>Error loading page.</p>';
+                });
+            }
+        </script>		
+                        
+    </body>
+</html>
