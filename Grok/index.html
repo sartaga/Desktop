@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <TITLE>GCS Home</TITLE>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta createdby="LGM">
+        <link rel="stylesheet" href="desktop.css" type="text/css" media="all">
+        <link rel="stylesheet" href="tabs.css" type="text/css" media="all">
+        <link rel="stylesheet" href="tables.css" type="text/css" media="all">
+        <link rel="icon" href="favicon.ico">        
+    </head>
+	
+    <body onload="bodyOnLoadFunction(); loadSidebar();">
+        <div id="surround">
+            <!-- ===========Side Menu========= -->
+            <div class="sidebar" id="sidebar">
+                <!-- Sidebar content will be dynamically loaded here -->
+            </div>
+            <!-- ===========End Side Menu ========= -->
+
+            <!-- ===========  Tabs   ========= -->
+            <div id="contentArea">
+                <div class="tabColumn">
+                    <div id="tabContainer">
+                      <div class="tabs">
+                        <ul>
+                          <li id="tabHeader_Home" onclick="loadTabContent('home.html', 'tabscontent')">Home</li>
+                          <li id="tabHeader_Synthesis" onclick="loadTabContent('synthesis.html', 'tabscontent')">Synthesis</li>
+                          <li id="tabHeader_Dev" onclick="loadTabContent('dev.html', 'tabscontent')">Dev</li>
+                          <li id="tabHeader_AI" onclick="loadTabContent('ai.html', 'tabscontent')">AI</li>
+                          <li id="tabHeader_PAC" onclick="loadTabContent('pac.html', 'tabscontent')">PAC</li>
+                          <li id="tabHeader_Docs" onclick="loadTabContent('docs.html', 'tabscontent')">Docs</li>
+                          <li id="tabHeader_Weather" onclick="loadTabContent('weather.html', 'tabscontent')">Weather</li>
+                        </ul>
+                      </div>
+
+                    <!-- =========== Tab Content  ========= -->
+                    <div class="tabscontent" id="tabscontent">
+                        <!-- Tab content will be dynamically loaded here -->
+                    </div><!-- TabContent -->
+                </div>
+            </div>
+        </div>
+
+        <script src="tabs.js"></script>
+        <script src="dynamic.js"></script>
+    </body>
+</html>

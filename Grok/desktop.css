@@ -1,0 +1,89 @@
+#surround {
+   font-family: arial, sans-serif;
+   /* font-size:x-small; */
+   /* padding-top: 5px; */
+}
+
+body {
+   background-color: Black;
+}
+
+.sidebar {
+   float:left;
+   width: 20%;
+   background-color: #993300;
+}
+
+.sidebar .a {
+	font-size: 2em;
+	list-style: none;
+}
+
+.sidetitle {
+   font-family:verdana, arial, sans-serif;
+   color:black;
+   font-size:medium;
+   font-weight:normal;
+   line-height:160%;
+   padding:2px;
+   letter-spacing: .1em;
+   border-bottom:1px dotted #FFF;
+   text-align:center;
+   background:#fd7e00;		
+}		
+
+.sidebar .li {
+   font-size: 2em;
+}
+
+#contentArea
+{
+   float: left;
+   width: 80%;
+}
+
+iframe
+{
+    border-width:0; 
+    border: 0;
+    width: 100%;
+}
+
+.image-link img {
+   width: 200px;
+   height: 100px;
+   outline: 2px solid lime;
+}
+
+a:hover 
+{
+    color: #C0C0C0;
+    color: red;
+    text-decoration: none; 
+}
+
+.menulines { 
+   font-family: arial, sans-serif;
+   font-size:small;
+   text-decoration:none; 
+}
+
+.menulines a { 
+   text-decoration:none; 
+   color:white;
+}    
+
+.menulines a:hover { 
+   text-decoration:none; 
+   color:red;
+}    
+
+.GoogleCalendar iframe
+{
+    border-width:0; 
+    margin-top:10px; 
+    width: 1060px;
+    height: 860px;
+    border: 0;
+}
+

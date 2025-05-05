@@ -1,0 +1,90 @@
+<div class="tabpage" id="tabpage_Home">
+    <table>
+        <tbody>
+            <tr>
+                <td style="padding-right: 30px;">
+                    <h3>Atlassian</h3>
+                    <a target="_blank" href="https://tesseractventures.atlassian.net/">Jira</a><br/>
+                    <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/home">Confluence</a><br/>
+                    <a target="_blank" href="https://tesseractventures.atlassian.net/jira/software/projects/SYN/boards/16/">Jira Synthesis</a><br/>
+                    <a target="_blank" href="https://tesseractventures.atlassian.net/wiki/spaces/Landus/">Confluence Synthesis</a><br/>
+                    <br/>
+                </td>
+                <td style="padding-right: 30px;">
+                    <h3>Git Links</h3>
+                    <a target="_blank" href="https://github.com/">GitHub</a><br/>
+                    <a target="_blank" href="http://help.github.com/win-set-up-git/">GitHub Setup</a><br/>
+                    <a target="_blank" href="http://book.git-scm.com/">Git Community Book</a><br/>
+                    <a target="_blank" href="https://book.git-scm.com/book/en/v2">Pro Git Book</a><br/>
+                    <br/>
+                </td>
+                <td style="padding-right: 30px;">
+                    <h3>Synthesis Environments</h3>
+                    <a target="_blank" href="https://dev.synthesis.mosaicapp.us/dashboard">Synthesis Dev</a><br/>
+                    <a target="_blank" href="https://wa-synthesis-ui-qa-cenus.azurewebsites.net/login?callbackUrl=%2Fdashboard">Synthesis QA</a><br/>
+                    <a target="_blank" href="https://wa-synthesis-ui-stage-cenus.azurewebsites.net/login?callbackUrl=%2Fdashboard">Synthesis Stage</a><br/>
+                    <br/>
+                    <br/>
+                </td>
+            </tr>                                    
+        </tbody>
+    </table>
+
+    <hr>
+    <div style="float:left">
+        <div>
+            <h3>Quick Git Workflow</h3>
+            <ol style="list-style-type: none;">
+                <li>git checkout -b feature/{name}</li>
+                <li>git add -A</li>
+                <li>git commit -m "Comment"</li>
+                <li>git checkout main</li>
+                <li>git merge feature/{name}</li>
+                <li>git branch -d feature/{name}</li>
+                <li>git push -v origin main</li>
+            </ol>
+        </div><br/>
+        <h3>More Git commands</h3>
+        <table>
+            <tr><td style="color:blue;width:400px;"><br/>Start workflow</td></tr>
+            <tr><td>git branch -d feature/oldname</td><td style="color:blue">(cleanup: remove last local feature branch [feature/oldFeature]) </td></tr>
+            <tr><td>git push origin -delete feature/oldname </td><td style="color:blue">(cleanup: remove last remote feature branch [origin feature/oldFeature])</td></tr>
+        </table>
+        <table>
+            <tr><td style="color:blue;width:400px;"><br/>Refresh Branches</td></tr>
+            <tr><td>git checkout main</td><td style="color:blue">(goto local main branch root folder)</td></tr>
+            <tr><td>git pull origin main </td><td style="color:blue">(refresh local current main) </td></tr>
+            <tr><td>git checkout develop </td><td style="color:blue">(goto develop branch) </td></tr>
+            <tr><td>git pull origin develop</td><td style="color:blue">(refresh local develop branch)</td></tr>
+        </table>
+        <table>
+            <tr><td style="color:blue;width:400px;"><br/>Begin Coding</td></tr>
+            <tr><td>git checkout -b feature/name  </td><td style="color:blue">(create local feature branch from develop)</td></tr>
+        </table>
+        <table>
+            <tr><td style="color:blue;width:400px;"><br/>Coding done, PR Checklist done</td></tr>
+            <tr><td>git add -A </td><td style="color:blue">(stage changed files) </td></tr>
+            <tr><td>git commit -m "Feature comment" </td><td style="color:blue">(commit staged changes to feature branch)</td></tr>
+        </table>
+        <table>
+            <tr><td style="color:blue;width:400px;"><br/>Ready for PR</td></tr>
+            <tr><td>git checkout develop </td><td style="color:blue">(goto local main branch root folder) </td></tr>
+            <tr><td>git merge feature/name </td><td style="color:blue">(pull feature changes into local develop branch)</td></tr>
+            <tr><td>git push origin feature/name </td><td style="color:blue">(push local feature branch to remote server for Pull Request)</td></tr>
+        </table>
+        <table>
+            <tr><td style="color:blue;width:400px;"><br/>Address PR comments</td></tr>
+            <tr><td>git checkout develop </td><td style="color:blue">(Reviewers could have changed remote feature branch during review)</td></tr>
+            <tr><td>git pull origin/feature/name </td><td style="color:blue">check for changes, pull as needed; verify this syntax</td></tr>
+            <tr><td>git checkout feature/name </td><td style="color:blue">goto local feature branch</td></tr>
+        </table>
+        <table>
+            <tr><td style="color:blue;width:400px;"><br/>Address Comments, Code Again</td></tr>
+            <tr><td>git add -A </td><td style="color:blue">(stage all changes to current branch) </td></tr>
+            <tr><td>git commit -m "PR comments"</td><td style="color:blue">(commit staged changes to local feature branch)</td></tr>
+            <tr><td>git checkout develop</td><td style="color:blue">(goto local root develop branch) </td></tr>
+            <tr><td>git merge feature/name </td><td style="color:blue">(pull feature changes into local develop branch)</td></tr>
+            <tr><td>git push origin feature/name</td><td style="color:blue">(push local feature branch to remote)</td></tr>
+        </table>
+    </div>
+</div>
